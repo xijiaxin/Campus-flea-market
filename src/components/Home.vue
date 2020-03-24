@@ -53,7 +53,11 @@
           <span>权限管理</span>
         </template>
         <!-- 二级菜单 -->
+<<<<<<< HEAD
         <el-menu-item index="/roles">
+=======
+        <el-menu-item index="2-1">
+>>>>>>> user
            <!-- 二级菜单模板区域 -->
         <template slot="title">
           <!-- 图标 -->
@@ -62,7 +66,11 @@
           <span>角色列表</span>
         </template>
         </el-menu-item>
+<<<<<<< HEAD
         <el-menu-item index="/rights">
+=======
+        <el-menu-item index="2-2">
+>>>>>>> user
            <!-- 二级菜单模板区域 -->
         <template slot="title">
           <!-- 图标 -->
@@ -152,6 +160,7 @@
         </template>
         </el-menu-item>
       </el-submenu>
+<<<<<<< HEAD
       <!-- 分类管理 -->
       <el-submenu index="6">
         <!-- 一级菜单模板区域 -->
@@ -172,6 +181,8 @@
         </template>
         </el-menu-item>
       </el-submenu>
+=======
+>>>>>>> user
     </el-menu>
     </el-aside>
     <!-- 主体框架区域 -->

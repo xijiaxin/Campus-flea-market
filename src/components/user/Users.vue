@@ -34,6 +34,10 @@
         </el-table-column> -->
         <el-table-column label="操作" >
             <template slot-scope="scope">
+<<<<<<< HEAD
+=======
+                 {{scope.row}}
+>>>>>>> user
                 <!-- 修改按钮 -->
                 <el-tooltip  effect="dark" content="修改用户" placement="top" :enterable="false">
                         <el-button type="primary" icon="el-icon-edit" @click="showEditDialog(scope.row.id)"></el-button>
@@ -96,7 +100,11 @@
      title="修改用户"
     :visible.sync="editDialogVisible"
     width="50%" @close="editDialogClosed">
+<<<<<<< HEAD
         <el-form :model="editForm" :rules="editFormRules" ref="editFormRef" label-width="70px">
+=======
+    <el-form :model="editForm" :rules="editFormRules" ref="editFormRef" label-width="70px">
+>>>>>>> user
         <el-form-item label="用户名">
              <el-input v-model="editForm.username" disabled></el-input>
         </el-form-item>
