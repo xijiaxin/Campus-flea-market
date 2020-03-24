@@ -7,7 +7,7 @@
       <span>校园二手交易平台后台管理系统</span>
     </div>
     <!--通过清除token实现退出-->
-    <el-button type="info" @click="logout">退出</el-button>  
+    <el-button type="info" @click="logout">退出</el-button>
     </el-header>
     <!-- 页面主体区域 -->
   <el-container>
@@ -53,11 +53,7 @@
           <span>权限管理</span>
         </template>
         <!-- 二级菜单 -->
-<<<<<<< HEAD
         <el-menu-item index="/roles">
-=======
-        <el-menu-item index="2-1">
->>>>>>> user
            <!-- 二级菜单模板区域 -->
         <template slot="title">
           <!-- 图标 -->
@@ -66,11 +62,7 @@
           <span>角色列表</span>
         </template>
         </el-menu-item>
-<<<<<<< HEAD
         <el-menu-item index="/rights">
-=======
-        <el-menu-item index="2-2">
->>>>>>> user
            <!-- 二级菜单模板区域 -->
         <template slot="title">
           <!-- 图标 -->
@@ -160,7 +152,6 @@
         </template>
         </el-menu-item>
       </el-submenu>
-<<<<<<< HEAD
       <!-- 分类管理 -->
       <el-submenu index="6">
         <!-- 一级菜单模板区域 -->
@@ -181,8 +172,6 @@
         </template>
         </el-menu-item>
       </el-submenu>
-=======
->>>>>>> user
     </el-menu>
     </el-aside>
     <!-- 主体框架区域 -->
@@ -195,19 +184,19 @@
 
 <script>
 export default {
-  data(){
+  data() {
     return {
-      isCollapse: false,
+      isCollapse: false
     }
   },
   methods: {
-         logout() {
-      //通过清除token实现退出
-       window.sessionStorage.clear()
-       this.$router.push('/login')
-     },
-     //点击按钮切换菜单的折叠与展开
-    toggloCollapse(){
+    logout() {
+      // 通过清除token实现退出
+      window.sessionStorage.clear()
+      this.$router.push('/login')
+    },
+    // 点击按钮切换菜单的折叠与展开
+    toggloCollapse() {
       this.isCollapse = !this.isCollapse
     }
   }
@@ -225,7 +214,7 @@ export default {
   padding-left: 0%;
   align-items: center;
   color: #fff;
-  font-size: 40px; 
+  font-size: 40px;
   > div{
     display: flex;
     align-items: center;
